@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB</title>
+    <link rel="icon" href="./msm.jpg">
+    <link rel="stylesheet" href="./variables.css" />
+    <link rel="stylesheet" href="./style.css" />
+    
+</head>
+<body>
+    <header>
+
+        <div class="container">
+            <a href="index.html"></a>
+
+            <nav>
+                <a href="#">Home</a>
+                <a href="https://en.wikipedia.org/wiki/Malayalam_cinema" target="click">About</a>
+                <a href="http://www.malayalamcinema.com/contact-us" target="click">Contact</a>
+            </nav>
+
+        </div>
+
+
+
+
+    </header>
+
+
+
+
+    <main>
+        <section class="banner-container">
+
+            <div class="container">
+                <div class="left-section">
+                    <h1>Welcome to Malayalam Film Industry</h1>
+                 
+                    <p>Malayalam cinema is the Indian film industry based in the southern state of Kerala, dedicated to the production of motion pictures in the Malayalam language. It is also known by the sobriquet Mollywood in various print and online media (a portmanteau of Malayalam and Hollywood). Malayalam film industry is the fourth biggest film industry in India.[4] The films produced here are known for their cinematography and story-driven realistic plots. Works such as Marana Simhasanam and Vanaprastham were screened in the Un Certain Regard section at the 1999 Cannes Film Festival.[5][6] Marana Simhasanam garnered the coveted Caméra d'Or ("Golden Camera") for that year.[7][8][9]
+                    </p>
+
+                    <button>Login</button>
+                    </div>
+
+                    
+
+                <div class="right-section">
+
+                    <h4>Please fill the form</h4>
+                    <form action="">
+                        <div class="input-group">
+                        <input type ="test" id="name" required />
+
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type ="email" id="email" required />
+                        <label for="email">Email</label>
+                    </div>
+
+                    <div class="input-group">
+                        <input type ="password" id="password" required />
+                        <label for="password">Password</label>
+                    </div>
+
+
+                    <div class="submit-section">
+                        <input type ="submit" class="submit-button" />
+                        
+                    </div>
+
+                    </form>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section class="section-two">
+
+            <div class="card-container">
+
+                <div class="image-container">
+                    <img src="./Mohanlal.jpg" qlt="">
+                </div>
+                <h1>Mohanlal</h1>
+
+
+            </div>
+
+
+            
+            <div class="card-container">
+
+                <div class="image-container">
+                    <img src="./Sureshgopi.jpg" qlt="">
+                </div>
+                <h1>Suresh Gopi</h1>
+
+
+            </div>
+
+            
+            <div class="card-container">
+
+                <div class="image-container">
+                    <img src="./M.jpg" qlt="">
+                </div>
+                <h1>Mammootty</h1>
+
+
+            </div>
+        </section>
+
+
+
+
+
+    </main>
+
+
+    <footer>
+
+        Designed and Developed by <span>PN</span>
+    </footer>
+
+
+
+
+
+
+    <script language="JavaScript">
+        /**
+          * Disable right-click of mouse, F12 key, and save key combinations on page
+          * By PN
+          * For full source code, visit @PN
+          */
+        window.onload = function() {
+          document.addEventListener("contextmenu", function(e){
+            e.preventDefault();
+          }, false);
+          document.addEventListener("keydown", function(e) {
+          //document.onkeydown = function(e) {
+            // "I" key
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+              disabledEvent(e);
+            }
+            // "J" key
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+              disabledEvent(e);
+            }
+            // "S" key + macOS
+            if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+              disabledEvent(e);
+            }
+            // "U" key
+            if (e.ctrlKey && e.keyCode == 85) {
+              disabledEvent(e);
+            }
+            // "F12" key
+            if (event.keyCode == 123) {
+              disabledEvent(e);
+            }
+          }, false);
+          function disabledEvent(e){
+            if (e.stopPropagation){
+              e.stopPropagation();
+            } else if (window.event){
+              window.event.cancelBubble = true;
+            }
+            e.preventDefault();
+            return false;
+          }
+        };
+      </script>
+
+
+
+</body>
+</html>
